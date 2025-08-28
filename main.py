@@ -13,14 +13,14 @@ console = Console()
 
 def main():
     parser = argparse.ArgumentParser(description="Instalador de bots Docker uwu")
-    parser.add_argument("--update", help="Actualizar keys.json desde URL")
+    parser.add_argument("--update", action="store_true", help="Actualizar keys.json")
     parser.add_argument("--install", help="Instalar paquete")
     parser.add_argument("--run", help="Ejecutar paquete instalado")
     parser.add_argument("--remove", help="Eliminar paquete instalado")
     args = parser.parse_args()
 
     if args.update:
-        update(args.update)
+        update()
     elif args.install:
         install(args.install)
     elif args.run:
