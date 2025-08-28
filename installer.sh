@@ -2,7 +2,7 @@
 
 # comprobamos que tenga los paquetes necesarios instalados
 # sudo apt update && sudo apt upgrade -y && sudo apt install python3 docker docker-compose make -y
-sudo pacman -Syu --no-confirm && sudo pacman -S python3 docker docker-compose make --no-confirm
+sudo pacman -Syu --noconfirm && sudo pacman -S python3 docker docker-compose make --noconfirm
 
 # creacion de la carpeta
 mkdir opcean-cli && cd opcean-cli
@@ -16,6 +16,7 @@ curl -O https://raw.githubusercontent.com/OpceanAI/Opcean-CLI/refs/heads/main/ma
 
 cd lib
 curl -O https://raw.githubusercontent.com/OpceanAI/Opcean-CLI/refs/heads/main/lib/common.py
+curl -O https://raw.githubusercontent.com/OpceanAI/Opcean-CLI/refs/heads/main/lib/config.py
 cd ..
 
 cd funcs
@@ -29,4 +30,5 @@ cd ..
 python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt
 
 # clonamos el archivo de configuracion por defecto
-# curl -O https://raw.githubusercontent.com/OpceanAI/Opcean-CLI/refs/heads/main/default.config.json
+curl -O https://raw.githubusercontent.com/OpceanAI/Opcean-CLI/refs/heads/main/.example.env
+cp .example.env .env
