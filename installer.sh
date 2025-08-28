@@ -2,7 +2,7 @@
 
 # comprobamos que tenga los paquetes necesarios instalados
 # sudo apt update && sudo apt upgrade -y && sudo apt install python3 docker docker-compose make -y
-sudo pacman -Syu --noconfirm && sudo pacman -S python3 docker docker-compose make --noconfirm
+sudo pacman -Syu --noconfirm && sudo pacman -S python3 docker docker-compose make git --noconfirm
 
 # creacion de la carpeta
 mkdir opcean-cli && cd opcean-cli
