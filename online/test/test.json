@@ -1,5 +1,9 @@
 {
   "name": "test",
-  "description": "un test rapido para probar el sistema uwuwu",
+  "version": "1.1.0",
+  "author": "OpceanAI",
+  "description": "una herramienta de prueba para comprobar que todo funcione correctamente",
+  "size": "~10MB",
+  "dependencies": ["OpceanAI-core"],
   "makefile_url": "https://raw.githubusercontent.com/OpceanAI/Opcean-CLI/refs/heads/main/online/test/Makefile"
 }
