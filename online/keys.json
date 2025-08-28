@@ -1,5 +1,5 @@
 {
   "nebula-git": "https://mi-servidor.com/discord-music-bot.json",
   "archan-git": "https://mi-servidor.com/moderation-bot.json",
-  "test": "https://mi-servidor.com/moderation-bot.json"
+  "test": "https://raw.githubusercontent.com/OpceanAI/Opcean-CLI/refs/heads/main/online/test/test.json"
 }
