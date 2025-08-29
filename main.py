@@ -17,6 +17,7 @@ def main():
     parser.add_argument("--install", help="Instalar paquete")
     parser.add_argument("--run", help="Ejecutar paquete instalado")
     parser.add_argument("--remove", help="Eliminar paquete instalado")
+    parser.add_argument("-local", action="store_true", help="Ejecutar en local sin Docker")
     args = parser.parse_args()
 
     if args.update:
@@ -24,7 +25,7 @@ def main():
     elif args.install:
         install(args.install)
     elif args.run:
-        run(args.run)
+        run(args.run, local=args.local)
     elif args.remove:
         remove(args.remove)
     else:

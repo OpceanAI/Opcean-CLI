@@ -15,3 +15,7 @@ install:
 
 run:
 	@cd $(PKG_DIR) && docker-compose up -d
+
+run-local:
+	@echo "🐾 Ejecutando en local (sin Docker)..."
+	# añade instrucciones para su ejecucion en local

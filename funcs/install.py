@@ -48,4 +48,4 @@ def install(pkg: str):
     (pkg_dir / "Makefile").write_text(makefile_content)
 
     console.print("[cyan]→ Ejecutando 'make install'[/cyan]")
-    run_command("make install", cwd=pkg_dir)
+    run_command("sudo make install", cwd=pkg_dir)
