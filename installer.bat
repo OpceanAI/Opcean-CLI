@@ -12,9 +12,9 @@ if %ERRORLEVEL% neq 0 (
 )
 
 :: instalar dependencias
-winget install -e --id Python.Python.3 -h
-winget install -e --id Git.Git -h
-winget install -e --id Docker.DockerDesktop -h
+:: winget install -e --id Python.Python.3 -h
+:: winget install -e --id Git.Git -h
+:: winget install -e --id Docker.DockerDesktop -h
 
 :: =========================
 :: 📂 Preparar estructura
